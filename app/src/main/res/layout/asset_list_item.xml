@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_asset_list_item_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/asset_image_description"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_asset_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Asset Title" />
+
+            <TextView
+                android:id="@+id/txt_asset_list_item_serialNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Serial Number: 000000000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_asset_list_item_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_primary"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="10dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:contentDescription="@string/view_button_icon_description"/>
+
+        <ImageButton
+            android:id="@+id/btn_asset_list_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#cc0000"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="10dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="@string/delete_button_icon_description"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

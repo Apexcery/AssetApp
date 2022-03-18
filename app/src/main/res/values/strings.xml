@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AssetApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_create_asset">CreateAssetActivity</string>
+    <string name="asset_image_description">Asset Image</string>
+    <string name="location_label">Location:</string>
+    <string name="view_button_icon_description">View Button Icon</string>
+    <string name="delete_button_icon_description">Delete Button Icon</string>
+    <string name="add_asset_icon_description">Add Asset Icon</string>
+    <string name="upload_image_description">Upload Image</string>
+    <string name="asset_id">Asset ID</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model_number">Model Number</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="add">Add</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/img_assetDetailsImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/asset_image_description" />
+
+        <!-- Asset ID -->
+        <TextView
+            android:id="@+id/txt_assetDetailsId"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset ID"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txt_assetDetailsTitle"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset Title"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txt_assetDetailsDescription"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset Description"/>
+
+        <!-- Serial Number -->
+        <TextView
+            android:id="@+id/txt_assetDetailsSerialNum"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset Serial Number"/>
+
+        <!-- Manufacturer -->
+        <TextView
+            android:id="@+id/txt_assetDetailsManufacturer"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset Manufacturer"/>
+
+        <!-- Model Number -->
+        <TextView
+            android:id="@+id/txt_assetDetailsModelNum"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            tools:text="Asset Model Number"/>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_label"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <!-- Latitude -->
+                <TextView
+                    android:id="@+id/txt_assetDetailsLatitude"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="16sp"
+                    tools:text="Asset Latitude"/>
+                <!-- Longitude -->
+                <TextView
+                    android:id="@+id/txt_assetDetailsLongitude"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="16sp"
+                    tools:text="Asset Longitude"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
